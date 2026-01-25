@@ -1,0 +1,10 @@
+torch
+transformers
+scipy
+fastapi
+uvicorn
+streamlit
+soundfile
+requests
+datasets==2.19.0
+sentencepiece
