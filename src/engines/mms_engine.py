@@ -17,7 +17,7 @@ class MMSEngine(TTSEngine):
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_id)
         print("MMS model loaded.")
 
-    def synthesize(self, text: str, language: str = None) -> tuple[int, np.ndarray]:
+    def synthesize(self, text: str, language: str = None, **kwargs) -> tuple[int, np.ndarray]:
         if not self.model:
             self.load()
 

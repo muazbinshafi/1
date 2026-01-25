@@ -6,6 +6,7 @@ A modular, open-source Text-to-Speech (TTS) framework with a focus on Urdu langu
 - **Modular Architecture**: Easily swappable TTS engines.
 - **Urdu Support**: Uses Meta's MMS (Massively Multilingual Speech) model for high-quality Urdu synthesis.
 - **English Support**: Uses Microsoft's SpeechT5 model.
+- **ElevenLabs Integration**: Optional support for ElevenLabs API (requires API Key) for realistic multilingual synthesis.
 - **API & UI**: Includes a FastAPI backend and a Streamlit frontend.
 
 ## Installation

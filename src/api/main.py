@@ -1,11 +1,13 @@
-from fastapi import FastAPI, HTTPException, Response
+from fastapi import FastAPI, HTTPException, Response, Header
 from pydantic import BaseModel
+from typing import Optional
 import soundfile as sf
 import io
 import numpy as np
 from src.core.model_manager import ModelManager
 from src.engines.mms_engine import MMSEngine
 from src.engines.speecht5_engine import SpeechT5Engine
+from src.engines.elevenlabs_engine import ElevenLabsEngine
 
 app = FastAPI(title="FreeFlowTTS API")
 
@@ -13,19 +15,22 @@ model_manager = ModelManager()
 # Register engines
 model_manager.register_engine("mms", MMSEngine)
 model_manager.register_engine("speecht5", SpeechT5Engine)
+model_manager.register_engine("elevenlabs", ElevenLabsEngine)
 
 class SynthesisRequest(BaseModel):
     text: str
     language: str = "eng" # 'eng' or 'urd'
     engine: str = None # Optional, if not provided, inferred from language
+    api_key: str = None # Optional, for ElevenLabs
 
 @app.get("/languages")
 def get_languages():
     return {
         "supported_languages": {
-            "urd": "Urdu (MMS)",
-            "eng": "English (SpeechT5)"
-        }
+            "urd": "Urdu (MMS / ElevenLabs)",
+            "eng": "English (SpeechT5 / ElevenLabs)"
+        },
+        "engines": ["mms", "speecht5", "elevenlabs"]
     }
 
 @app.post("/synthesize")
@@ -46,7 +51,8 @@ def synthesize(request: SynthesisRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
     try:
-        sampling_rate, audio_array = engine.synthesize(request.text, request.language)
+        # Pass api_key in kwargs
+        sampling_rate, audio_array = engine.synthesize(request.text, request.language, api_key=request.api_key)
 
         # Convert numpy array to bytes (WAV)
         buffer = io.BytesIO()
