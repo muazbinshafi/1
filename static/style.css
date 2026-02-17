@@ -1,0 +1,142 @@
+:root {
+    --primary: #25D366; /* WhatsApp Green */
+    --secondary: #128C7E;
+    --dark: #075E54;
+    --light: #ECE5DD;
+    --text: #333;
+    --white: #fff;
+    --gray: #f0f0f0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light);
+    color: var(--text);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: var(--dark);
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: var(--secondary);
+    font-size: 1.1em;
+}
+
+.analytics-panel {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.stat-box {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.stat-value {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.controls {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.btn.primary {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.btn.primary:hover {
+    background: var(--secondary);
+}
+
+.table-container {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--gray);
+}
+
+th {
+    background: var(--gray);
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.whatsapp-btn {
+    background: var(--primary);
+    color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 16px;
+}
+
+.whatsapp-btn:hover {
+    background: var(--secondary);
+}
+
+.badge {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.badge.clinic { background: #e3f2fd; color: #1976d2; }
+.badge.store { background: #e8f5e9; color: #2e7d32; }
+.badge.service { background: #fff3e0; color: #f57c00; }
+
+.empty-state {
+    padding: 40px;
+    text-align: center;
+    color: #888;
+}
+
+.hidden {
+    display: none;
+}
