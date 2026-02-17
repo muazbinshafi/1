@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Universal Lead Collector 🚀</h1>
+            <p class="subtitle">Targeting Businesses in Bahawalpur, Punjab, Pakistan</p>
+        </header>
+
+        <div class="analytics-panel">
+            <div class="stat-box">
+                <h3>Total Leads Found</h3>
+                <span id="total-leads" class="stat-value">0</span>
+            </div>
+            <div class="stat-box">
+                <h3>Leads Contacted</h3>
+                <span id="contacted-leads" class="stat-value">0</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="fetch-btn" class="btn primary">Fetch Leads</button>
+        </div>
+
+        <div class="table-container">
+            <table id="leads-table">
+                <thead>
+                    <tr>
+                        <th>Business Name</th>
+                        <th>Type</th>
+                        <th>City</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="leads-body">
+                    <!-- Leads will be inserted here -->
+                </tbody>
+            </table>
+            <div id="empty-state" class="empty-state hidden">
+                No leads found. Click "Fetch Leads" to start.
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
