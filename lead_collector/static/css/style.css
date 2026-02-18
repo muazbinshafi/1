@@ -1,0 +1,66 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+}
+
+.table th {
+    font-weight: 600;
+    color: #495057;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    padding: 1rem 1.5rem;
+}
+
+.table td {
+    padding: 1rem 1.5rem;
+    color: #212529;
+    font-size: 0.95rem;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+    color: white;
+    transform: translateY(-1px);
+}
+
+.badge-type {
+    font-size: 0.8rem;
+    padding: 0.4em 0.8em;
+    border-radius: 20px;
+}
+
+.badge-clinic {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.badge-store {
+    background-color: #fce4ec;
+    color: #c2185b;
+}
+
+.badge-service {
+    background-color: #e8f5e9;
+    color: #388e3c;
+}
