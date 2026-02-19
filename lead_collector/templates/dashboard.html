@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Universal Lead Collector</h1>
+            <p>Target: Bahawalpur, Pakistan | Filter: Phone Only (No Website)</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="analytics-bar">
+            <div class="stat-card">
+                <h3>New Leads</h3>
+                <p id="new-leads-count">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Contacted</h3>
+                <p id="contacted-leads-count">0</p>
+            </div>
+            <div class="actions">
+                <button id="collect-btn" class="btn btn-primary">Collect More Leads</button>
+            </div>
+        </section>
+
+        <section class="leads-section">
+            <div class="table-container">
+                <table id="leads-table">
+                    <thead>
+                        <tr>
+                            <th>Business Name</th>
+                            <th>Type</th>
+                            <th>City</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Leads will be injected here -->
+                    </tbody>
+                </table>
+                <div id="loading" class="hidden">Loading...</div>
+                <div id="empty-state" class="hidden">No new leads found. Try collecting more.</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Business Solutions - Lead Generation System</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
