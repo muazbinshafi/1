@@ -1,0 +1,5 @@
+flask
+sqlalchemy
+apscheduler
+playwright
+beautifulsoup4
