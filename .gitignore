@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+leads.db
+server.log
+server.pid
+verification/

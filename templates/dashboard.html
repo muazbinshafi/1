@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector - Bahawalpur</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="brand">
+                <h1>Universal Lead Collector 🚀</h1>
+                <p class="subtitle">Bahawalpur Region Lead Generation Dashboard</p>
+            </div>
+            <div class="status-indicator">
+                <span class="status-dot"></span> System Active
+            </div>
+        </header>
+
+        <div class="stats-panel">
+            <div class="stat-card">
+                <div class="stat-icon">📊</div>
+                <div class="stat-info">
+                    <h3>Total Found</h3>
+                    <p id="total-leads">Loading...</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+                <div class="stat-info">
+                    <h3>Contacted</h3>
+                    <p id="contacted-leads">Loading...</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🆕</div>
+                <div class="stat-info">
+                    <h3>Pending Action</h3>
+                    <p id="new-leads">Loading...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls-area">
+            <button id="refresh-btn" class="btn secondary">🔄 Refresh List</button>
+            <button id="collect-btn" class="btn primary">🔍 Scrape New Leads</button>
+        </div>
+
+        <div class="table-wrapper">
+            <table id="leads-table">
+                <thead>
+                    <tr>
+                        <th>Business Name</th>
+                        <th>Type</th>
+                        <th>City</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows injected via JS -->
+                </tbody>
+            </table>
+            <div id="empty-state" class="empty-state hidden">
+                <p>No new leads found. Try scraping more!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
