@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector - Bahawalpur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-building"></i> Universal Lead Collector</h1>
+            <p>Targeting Businesses in Bahawalpur, Punjab, Pakistan (No Website)</p>
+        </header>
+
+        <section class="stats-container">
+            <div class="stat-card">
+                <h3>Total Leads</h3>
+                <p id="total-leads">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Contacted</h3>
+                <p id="contacted-leads">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>New Leads</h3>
+                <p id="new-leads">0</p>
+            </div>
+        </section>
+
+        <section class="leads-table-container">
+            <h2>Active Leads</h2>
+            <table id="leads-table">
+                <thead>
+                    <tr>
+                        <th>Business Name</th>
+                        <th>Type</th>
+                        <th>City</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Leads will be injected here by JS -->
+                </tbody>
+            </table>
+            <div id="loading-indicator" style="display: none; text-align: center; padding: 20px;">
+                <i class="fas fa-spinner fa-spin"></i> Loading leads...
+            </div>
+            <div id="no-leads-message" style="display: none; text-align: center; padding: 20px;">
+                No new leads available. Searching...
+            </div>
+        </section>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
