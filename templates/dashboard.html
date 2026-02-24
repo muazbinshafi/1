@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Universal Lead Collector</h1>
+            <div id="stats" class="stats-container">
+                <div class="stat-box">
+                    <span class="stat-label">Total Leads</span>
+                    <span id="total-leads" class="stat-value">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">New Leads</span>
+                    <span id="new-leads" class="stat-value">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Contacted</span>
+                    <span id="contacted-leads" class="stat-value">0</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="table-responsive">
+                <table id="leads-table">
+                    <thead>
+                        <tr>
+                            <th>Business Name</th>
+                            <th>Type</th>
+                            <th>City</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Leads will be injected here -->
+                    </tbody>
+                </table>
+                <div id="loading" class="loading">Loading leads...</div>
+                <div id="no-leads" class="no-leads" style="display: none;">No new leads available. Collecting more...</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
