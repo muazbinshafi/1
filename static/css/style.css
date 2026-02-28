@@ -1,0 +1,110 @@
+:root {
+    --primary: #25D366;
+    --primary-hover: #128C7E;
+    --background: #f0f2f5;
+    --text: #111b21;
+    --text-light: #667781;
+    --white: #ffffff;
+    --border: #d1d7db;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: var(--primary-hover);
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: var(--text-light);
+    margin: 0;
+}
+
+.stats-container {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.stat-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: var(--text-light);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-hover);
+    margin: 0;
+}
+
+.table-container {
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.btn-whatsapp {
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--primary-hover);
+}
