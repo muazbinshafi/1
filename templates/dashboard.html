@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="header-container">
+            <h1>Universal Lead Collector</h1>
+            <p>Targeting Bahawalpur, Pakistan Businesses without Websites</p>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+        <section class="analytics-section">
+            <div class="stat-card">
+                <h3>Total Leads</h3>
+                <p id="stat-total" class="stat-number">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>New Active</h3>
+                <p id="stat-new" class="stat-number">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Contacted</h3>
+                <p id="stat-contacted" class="stat-number">0</p>
+            </div>
+        </section>
+
+        <section class="table-section">
+            <h2>Active Leads</h2>
+            <div class="table-wrapper">
+                <table id="leads-table">
+                    <thead>
+                        <tr>
+                            <th>Business Name</th>
+                            <th>Type</th>
+                            <th>City</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leads-body">
+                        <!-- Leads will be injected here via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="loading-state" class="loading-state">
+                <p>Loading leads...</p>
+            </div>
+            <div id="empty-state" class="empty-state" style="display: none;">
+                <p>No active leads available at this time.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
