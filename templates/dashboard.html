@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <!-- Use WhatsApp-inspired color palette in CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Defer script to improve performance -->
+    <script src="/static/js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Universal Lead Collector</h1>
+            <p>Targeting businesses without websites in Bahawalpur, Pakistan.</p>
+        </header>
+
+        <!-- Analytics Section -->
+        <section class="analytics">
+            <div class="stat-card">
+                <h3>Total Leads</h3>
+                <p id="total-leads">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>New Leads</h3>
+                <p id="new-leads">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Contacted</h3>
+                <p id="contacted-leads">0</p>
+            </div>
+        </section>
+
+        <!-- Leads Table -->
+        <section class="leads-table-container">
+            <h2>Active Leads</h2>
+            <div class="table-wrapper">
+                <table id="leads-table">
+                    <thead>
+                        <tr>
+                            <th>Business Name</th>
+                            <th>Type</th>
+                            <th>City</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leads-body">
+                        <!-- Dynamic rows will be inserted here -->
+                        <tr><td colspan="5" style="text-align:center;">Loading leads...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
