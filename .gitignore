@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+leads.db
+flask.log
+venv/
+env/
+.env
+.pytest_cache/
+htmlcov/
+*.log
