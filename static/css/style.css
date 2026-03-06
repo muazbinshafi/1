@@ -1,0 +1,128 @@
+:root {
+    --whatsapp-primary: #25D366;
+    --whatsapp-secondary: #128C7E;
+    --background-color: #f0f2f5;
+    --card-background: #ffffff;
+    --text-color: #333333;
+    --border-color: #e0e0e0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: var(--whatsapp-secondary);
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    color: #666;
+    font-size: 1.2em;
+}
+
+.analytics {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.stat-card {
+    background: var(--card-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.stat-card h3 {
+    margin-top: 0;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.stat-card p {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 10px 0 0;
+    color: var(--whatsapp-secondary);
+}
+
+.new-leads p {
+    color: #007bff;
+}
+
+.contacted-leads p {
+    color: var(--whatsapp-primary);
+}
+
+.leads-table-container {
+    background: var(--card-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+h2 {
+    color: var(--whatsapp-secondary);
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #555;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.whatsapp-btn {
+    background-color: var(--whatsapp-primary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background-color: var(--whatsapp-secondary);
+}
