@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+leads.db
+flask.log
+flask.pid
+playwright-report/
