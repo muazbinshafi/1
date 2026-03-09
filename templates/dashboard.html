@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Load JS with defer to improve performance -->
+    <script src="/static/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Universal Lead Collector</h1>
+            <p>Bahawalpur Business Outreach Dashboard</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Analytics Section -->
+        <section class="analytics-section">
+            <div class="stat-card">
+                <h3>Total Leads Discovered</h3>
+                <p id="total-leads">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Leads Contacted</h3>
+                <p id="contacted-leads">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>New Uncontacted Leads</h3>
+                <p id="new-leads">0</p>
+            </div>
+        </section>
+
+        <!-- Leads Table Section -->
+        <section class="table-section">
+            <h2>Active Prospects</h2>
+            <div class="table-container">
+                <table id="leads-table">
+                    <thead>
+                        <tr>
+                            <th>Business Name</th>
+                            <th>Type</th>
+                            <th>City</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leads-body">
+                        <!-- Leads injected here by JavaScript -->
+                        <tr>
+                            <td colspan="5" style="text-align:center;">Loading active leads...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Business Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
