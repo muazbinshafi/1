@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Universal Lead Collector</h1>
+            <p>Targeting businesses without websites in Bahawalpur</p>
+        </header>
+
+        <section class="stats-container">
+            <div class="stat-card">
+                <div class="stat-value" id="stat-total">0</div>
+                <div class="stat-label">Total Leads Found</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="stat-new">0</div>
+                <div class="stat-label">New (Uncontacted)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="stat-contacted">0</div>
+                <div class="stat-label">Contacted</div>
+            </div>
+        </section>
+
+        <section class="leads-container">
+            <table id="leads-table">
+                <thead>
+                    <tr>
+                        <th>Business Name</th>
+                        <th>Type</th>
+                        <th>City</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="leads-body">
+                    <!-- Leads will be injected here via JavaScript -->
+                </tbody>
+            </table>
+            <div id="loading" class="loading">Loading leads...</div>
+        </section>
+    </div>
+</body>
+</html>
