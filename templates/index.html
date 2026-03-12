@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Universal Lead Collector Dashboard</h1>
+            <p>Targeting local businesses without a web presence in Bahawalpur</p>
+        </header>
+
+        <section class="analytics-panel">
+            <div class="stat-card">
+                <h3>Total Leads Found</h3>
+                <p id="stat-total" class="stat-value">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Contacted Leads</h3>
+                <p id="stat-contacted" class="stat-value">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Active New Leads</h3>
+                <p id="stat-new" class="stat-value">0</p>
+            </div>
+        </section>
+
+        <main class="leads-section">
+            <h2>Active Leads</h2>
+            <div class="table-container">
+                <table id="leads-table">
+                    <thead>
+                        <tr>
+                            <th>Business Name</th>
+                            <th>Type</th>
+                            <th>City</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leads-body">
+                        <!-- Leads will be injected here via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/js/script.js" defer></script>
+</body>
+</html>
