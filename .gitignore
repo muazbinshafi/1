@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+leads.db
+test_leads.db
+test_flask.db
+flask.log
+flask.pid
+dashboard_screenshot.png

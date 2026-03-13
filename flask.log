@@ -1,0 +1,13 @@
+INFO:apscheduler.scheduler:Adding job tentatively -- it will be properly scheduled when the scheduler starts
+INFO:apscheduler.scheduler:Added job "scheduled_collection" to job store "default"
+INFO:apscheduler.scheduler:Scheduler started
+ * Serving Flask app 'run'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2026 05:48:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2026 05:48:57] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2026 05:48:57] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2026 05:48:57] "GET /api/leads HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Mar/2026 05:48:57] "GET /api/stats HTTP/1.1" 200 -
