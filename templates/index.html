@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1>Universal Lead Collector</h1>
+            <div class="stats">
+                <div class="stat-card">
+                    <span class="stat-label">Total Leads</span>
+                    <span class="stat-value" id="total-leads">0</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Contacted</span>
+                    <span class="stat-value" id="contacted-leads">0</span>
+                </div>
+                <div class="stat-card new-lead">
+                    <span class="stat-label">New Leads</span>
+                    <span class="stat-value" id="new-leads">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="table-container">
+            <table id="leads-table">
+                <thead>
+                    <tr>
+                        <th>Business Name</th>
+                        <th>Type</th>
+                        <th>City</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="leads-body">
+                    <!-- Dynamic content here -->
+                </tbody>
+            </table>
+            <div id="loading" class="loading">Loading leads...</div>
+            <div id="no-leads" class="hidden loading">No new leads available.</div>
+        </div>
+    </main>
+</body>
+</html>
