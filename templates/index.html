@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script defer src="/static/js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Universal Lead Collector</h1>
+            <p>Bahawalpur Business Outreach</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="metrics-section">
+            <div class="metric-card">
+                <h3>Total Leads</h3>
+                <p id="metric-total">0</p>
+            </div>
+            <div class="metric-card">
+                <h3>Contacted</h3>
+                <p id="metric-contacted">0</p>
+            </div>
+            <div class="metric-card new-leads">
+                <h3>New Leads</h3>
+                <p id="metric-new">0</p>
+            </div>
+        </section>
+
+        <section class="leads-section">
+            <div class="table-header">
+                <h2>Active Leads Without Websites</h2>
+                <button id="refresh-btn">Refresh Leads</button>
+            </div>
+            <div class="table-container">
+                <table id="leads-table">
+                    <thead>
+                        <tr>
+                            <th>Business Name</th>
+                            <th>Type</th>
+                            <th>City</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leads-body">
+                        <!-- Leads will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
