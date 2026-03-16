@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script defer src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Universal Lead Collector</h1>
+            <p>Targeting local businesses without websites in Bahawalpur</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="analytics">
+            <div class="stat-card">
+                <h3>Total Leads</h3>
+                <p id="total-leads">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>New (Pending)</h3>
+                <p id="new-leads">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Contacted</h3>
+                <p id="contacted-leads">0</p>
+            </div>
+        </section>
+
+        <section class="table-container">
+            <table id="leads-table">
+                <thead>
+                    <tr>
+                        <th>Business Name</th>
+                        <th>Type</th>
+                        <th>City</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="leads-body">
+                    <!-- Leads will be injected here via JS -->
+                </tbody>
+            </table>
+            <p id="loading-msg">Loading leads...</p>
+            <p id="no-leads-msg" style="display: none;">No new leads available.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Universal Lead Collector &copy; 2024 | Powered by Business Solutions</p>
+    </footer>
+</body>
+</html>
