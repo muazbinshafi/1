@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+leads.db
+test_leads.db
+dashboard.png
+verification.png
+.pytest_cache/
