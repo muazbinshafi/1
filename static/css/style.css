@@ -1,0 +1,136 @@
+/* WhatsApp Color Palette */
+:root {
+    --wa-primary: #25D366;
+    --wa-dark: #128C7E;
+    --bg-color: #ECE5DD;
+    --text-color: #075E54;
+    --white: #FFFFFF;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.header {
+    background-color: var(--wa-dark);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+}
+
+.header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.dashboard {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Analytics */
+.analytics {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    flex: 1;
+    text-align: center;
+}
+
+.stat-card h3 {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--wa-dark);
+}
+
+/* Leads Table */
+.leads-container {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+}
+
+.leads-container h2 {
+    margin-bottom: 1rem;
+    color: var(--wa-dark);
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Button */
+.btn-whatsapp {
+    background-color: var(--wa-primary);
+    color: var(--white);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--wa-dark);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .analytics {
+        flex-direction: column;
+    }
+
+    th, td {
+        padding: 0.75rem;
+    }
+}
