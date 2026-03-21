@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Universal Lead Collector</h1>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <span class="stat-label">Total Leads:</span>
+                    <span id="stat-total" class="stat-value">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Contacted:</span>
+                    <span id="stat-contacted" class="stat-value">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">New:</span>
+                    <span id="stat-new" class="stat-value">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="table-container">
+            <table id="leads-table">
+                <thead>
+                    <tr>
+                        <th>Business Name</th>
+                        <th>Type</th>
+                        <th>City</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="leads-body">
+                    <!-- Leads will be injected here via JS -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
