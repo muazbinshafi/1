@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+leads.db
+test_leads.db
+dashboard.png
+verification.png
+/public/
+venv/
+env/
+.pytest_cache/
+flask.log
+flask.pid
