@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+leads.db
+test_leads.db
+test_leads_backend.db
+.pytest_cache/
+*.log
+*.pid
+dashboard.png
+verification.png
