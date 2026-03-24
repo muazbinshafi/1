@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <!-- Use basic system fonts for performance -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header Section -->
+        <header class="dashboard-header">
+            <div class="header-left">
+                <h1>Universal Lead Collector</h1>
+                <p>Bahawalpur, Pakistan | Automated Search & Outreach</p>
+            </div>
+            <div class="header-right">
+                <div class="stat-box">
+                    <h3>Total Leads</h3>
+                    <p id="total-leads-count" class="stat-value">0</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Contacted</h3>
+                    <p id="contacted-leads-count" class="stat-value">0</p>
+                </div>
+                <div class="stat-box">
+                    <h3>New</h3>
+                    <p id="new-leads-count" class="stat-value">0</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+            <!-- Analytics Section -->
+            <section class="analytics-section">
+                <h2>Real-time Analytics</h2>
+                <div class="analytics-cards">
+                    <div class="analytics-card">
+                        <h4>Conversion Potential</h4>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                    <div class="analytics-card">
+                        <h4>Outreach Rate</h4>
+                        <div class="progress-bar">
+                            <div class="progress" id="outreach-progress" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Table Section -->
+            <section class="table-section">
+                <h2>Uncontacted Businesses (No Website)</h2>
+                <table class="leads-table">
+                    <thead>
+                        <tr>
+                            <th>Business Name</th>
+                            <th>Type</th>
+                            <th>City</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leads-body">
+                        <!-- Populated dynamically via JS -->
+                        <tr>
+                            <td colspan="5" class="loading-cell">Loading uncontacted leads...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <!-- Script deferred to end of body -->
+    <script defer src="/static/js/script.js"></script>
+</body>
+</html>

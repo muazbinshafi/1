@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest
+.pytest_cache/
+
+# Databases
+leads.db
+test_leads.db
+
+# Playwright screenshots
+dashboard.png
+verification.png
+
+# Logs
+flask.log
+flask.pid
