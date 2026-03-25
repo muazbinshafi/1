@@ -1,0 +1,133 @@
+:root {
+    --primary-color: #25D366; /* WhatsApp Green */
+    --secondary-color: #128C7E; /* WhatsApp Dark Green */
+    --bg-color: #f0f2f5;
+    --text-color: #333;
+    --card-bg: #fff;
+    --border-color: #ddd;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.header-container p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.analytics-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    flex: 1;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+}
+
+.stat-card h3 {
+    margin: 0 0 0.5rem 0;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.stat-card p {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.table-section {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+thead {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid var(--border-color);
+}
+
+th, td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    font-weight: 600;
+    color: #444;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-whatsapp {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.2s;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .analytics-section {
+        flex-direction: column;
+    }
+}
