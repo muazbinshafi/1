@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.db
+!test_*.db
+dashboard.png
+verify_*.py
+verification/
