@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Universal Lead Collector</h1>
+            <p>Targeting businesses without websites in Bahawalpur</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="stats-section">
+            <div class="stat-card">
+                <h3>Total Leads</h3>
+                <p id="total-stat">0</p>
+            </div>
+            <div class="stat-card contacted-card">
+                <h3>Contacted</h3>
+                <p id="contacted-stat">0</p>
+            </div>
+            <div class="stat-card new-card">
+                <h3>New Opportunities</h3>
+                <p id="new-stat">0</p>
+            </div>
+        </section>
+
+        <section class="leads-section">
+            <div class="table-responsive">
+                <table id="leads-table">
+                    <thead>
+                        <tr>
+                            <th>Business Name</th>
+                            <th>Type</th>
+                            <th>City</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leads-body">
+                        <!-- Leads injected here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
