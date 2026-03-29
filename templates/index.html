@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Universal Lead Collector</h1>
+            <p>Bahawalpur Local Business Expansion</p>
+        </div>
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>Total Leads</h3>
+                <p id="stat-total">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Contacted</h3>
+                <p id="stat-contacted">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>New Leads</h3>
+                <p id="stat-new">0</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="table-responsive">
+            <table id="leads-table">
+                <thead>
+                    <tr>
+                        <th>Business Name</th>
+                        <th>Type</th>
+                        <th>City</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="leads-body">
+                    <!-- Leads will be dynamically populated here -->
+                </tbody>
+            </table>
+        </div>
+        <div id="loading" class="loading">Fetching new leads...</div>
+    </main>
+</body>
+</html>
