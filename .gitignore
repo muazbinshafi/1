@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# Database
+leads.db
+test_leads.db
+
+# Test artifacts
+verification.png
+.pytest_cache/
+
+# OS
+.DS_Store
