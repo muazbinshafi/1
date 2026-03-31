@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Universal Lead Collector</h1>
+            <p>Targeting local businesses without websites in Bahawalpur</p>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <section class="analytics-section">
+            <div class="stat-card">
+                <h3>Total Leads</h3>
+                <p id="total-leads" class="stat-value">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Contacted</h3>
+                <p id="contacted-leads" class="stat-value">0</p>
+            </div>
+            <div class="stat-card highlight">
+                <h3>New Leads</h3>
+                <p id="new-leads" class="stat-value">0</p>
+            </div>
+        </section>
+
+        <section class="table-section">
+            <div class="table-header">
+                <h2>Pending Leads</h2>
+            </div>
+            <div class="table-responsive">
+                <table id="leads-table">
+                    <thead>
+                        <tr>
+                            <th>Business Name</th>
+                            <th>Type</th>
+                            <th>City</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leads-body">
+                        <!-- Rows populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
