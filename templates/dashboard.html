@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Universal Lead Collector</h1>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <span class="stat-title">Total Leads</span>
+                    <span class="stat-value" id="stat-total">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-title">New (Uncontacted)</span>
+                    <span class="stat-value" id="stat-new">0</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-title">Contacted</span>
+                    <span class="stat-value" id="stat-contacted">0</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="table-container">
+                <h2>Active Leads (Bahawalpur)</h2>
+                <table id="leads-table">
+                    <thead>
+                        <tr>
+                            <th>Business Name</th>
+                            <th>Type</th>
+                            <th>City</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="leads-body">
+                        <!-- Rows will be populated by JS -->
+                    </tbody>
+                </table>
+                <div id="loading-indicator" class="loading">Loading leads...</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
