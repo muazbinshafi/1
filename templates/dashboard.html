@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Adding Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1><i class="fa-solid fa-bolt"></i> Universal Lead Collector</h1>
+            <p>Targeting businesses in Bahawalpur lacking online presence.</p>
+        </header>
+
+        <section class="analytics-section">
+            <div class="stat-card">
+                <h3>Total Leads</h3>
+                <p id="stat-total">0</p>
+            </div>
+            <div class="stat-card new-leads">
+                <h3>New Leads</h3>
+                <p id="stat-new">0</p>
+            </div>
+            <div class="stat-card contacted-leads">
+                <h3>Contacted</h3>
+                <p id="stat-contacted">0</p>
+            </div>
+        </section>
+
+        <section class="leads-section">
+            <table class="leads-table">
+                <thead>
+                    <tr>
+                        <th>Business Name</th>
+                        <th>Type</th>
+                        <th>City</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="leads-body">
+                    <!-- Rows will be populated by JavaScript -->
+                    <tr><td colspan="5" style="text-align: center;">Loading leads...</td></tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
