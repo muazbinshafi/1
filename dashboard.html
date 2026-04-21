@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Universal Lead Collector</h1>
+        <div class="analytics">
+            <div class="card">
+                <h3>Total Leads</h3>
+                <p id="total-leads">0</p>
+            </div>
+            <div class="card">
+                <h3>Contacted</h3>
+                <p id="contacted-leads">0</p>
+            </div>
+            <div class="card">
+                <h3>Pending</h3>
+                <p id="pending-leads">0</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <table class="leads-table">
+            <thead>
+                <tr>
+                    <th>Business Name</th>
+                    <th>Type</th>
+                    <th>City</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="leads-body">
+                <!-- Leads will be populated here by JS -->
+            </tbody>
+        </table>
+    </main>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
