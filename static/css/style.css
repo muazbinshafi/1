@@ -1,0 +1,104 @@
+:root {
+    --primary: #25D366;
+    --primary-dark: #128C7E;
+    --background: #f0f2f5;
+    --surface: #ffffff;
+    --text: #111b21;
+    --text-secondary: #667781;
+    --border: #d1d7db;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: var(--primary-dark);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0 0 20px 0;
+}
+
+.analytics {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: var(--surface);
+    color: var(--text);
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    min-width: 120px;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.card p {
+    margin: 10px 0 0 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-dark);
+}
+
+.main-content {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.leads-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--surface);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.leads-table th, .leads-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.leads-table th {
+    background-color: #f8f9fa;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.leads-table tr:last-child td {
+    border-bottom: none;
+}
+
+.btn-whatsapp {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--primary-dark);
+}
