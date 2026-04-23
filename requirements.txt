@@ -1,0 +1,4 @@
+Flask
+APScheduler
+playwright
+greenlet>=3.0.0
