@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+leads.db
+test_leads.db
+test_leads_api.db
+test_leads_e2e.db
+verify_leads.db
+*.png
+flask.log
+flask.pid
