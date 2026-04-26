@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Lead Collector</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1>Universal Lead Collector</h1>
+            <div class="analytics">
+                <div class="stat-box">
+                    <h3>Total Leads</h3>
+                    <p id="total-leads">0</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <table class="leads-table" id="leads-table">
+                <thead>
+                    <tr>
+                        <th>Business Name</th>
+                        <th>Type</th>
+                        <th>City</th>
+                        <th>Phone</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="leads-body">
+                    <!-- Leads will be injected here via JS -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>

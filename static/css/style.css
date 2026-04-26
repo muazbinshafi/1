@@ -1,0 +1,110 @@
+:root {
+    --wa-primary: #25D366;
+    --wa-secondary: #128C7E;
+    --wa-dark: #075E54;
+    --wa-light: #DCF8C6;
+    --bg-color: #f0f2f5;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: var(--wa-dark);
+}
+
+.analytics {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-box {
+    background-color: var(--wa-light);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 120px;
+}
+
+.stat-box h3 {
+    font-size: 14px;
+    color: var(--wa-dark);
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--wa-secondary);
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+.leads-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.leads-table th, .leads-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.leads-table th {
+    background-color: var(--wa-secondary);
+    color: white;
+    font-weight: 600;
+}
+
+.leads-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+.btn-whatsapp {
+    background-color: var(--wa-primary);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-whatsapp:hover {
+    background-color: var(--wa-dark);
+}
